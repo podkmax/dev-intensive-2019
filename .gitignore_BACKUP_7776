@@ -1,17 +1,20 @@
 # Built application files
+<<<<<<< HEAD
 build/
-*.apk
-*.ap_
-*.aab
 
 # Files for the ART/Dalvik VM
 *.dex
 
 # External native build folder generated in Android Studio 2.2 and later
 .externalNativeBuild
+=======
+*.apk
+*.ap_
+*.aab
 
 # Local configuration file (sdk path, etc)
 local.properties
+>>>>>>> conflict
 
 # Gradle files
 .gradle/
@@ -21,6 +24,10 @@ local.properties
 
 # User-specific configurations
 *.iml
+
+<<<<<<< HEAD
+# Local configuration file (sdk path, etc)
+local.properties
 
 # Log Files
 *.log
@@ -41,7 +48,7 @@ google-services.json
 
 # Version control
 vcs.xml
-
+=======
 # OS-specific files
 .DS_Store
 .DS_Store?
@@ -60,3 +67,4 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 lint/reports/
+>>>>>>> conflict
