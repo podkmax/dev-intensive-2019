@@ -12,11 +12,11 @@ abstract class BaseMessage(
     abstract fun formatMessage(): String
     companion object AbstractFactory {
         var id = -1
-        fun makeMessage(from: User?, chat: Chat, date: Date = Date(), type: String, payload: Any) : BaseMessage {
+        fun makeMessage(from: User?, chat: Chat, date: Date = Date(), type: String, payload: Any, isIncoming: Boolean = false) : BaseMessage {
             id++
             return when(type) {
-                "image" -> ImageMessage("$id", from, chat, date = date, image = payload as String)
-                    else -> TextMessage("$id", from, chat, date = date, text = payload as String)
+                "image" -> ImageMessage("$id", from, chat, date = date, image = payload as String, isIncoming = isIncoming)
+                else -> TextMessage("$id", from, chat, date = date, text = payload as String, isIncoming = isIncoming)
             }
         }
     }

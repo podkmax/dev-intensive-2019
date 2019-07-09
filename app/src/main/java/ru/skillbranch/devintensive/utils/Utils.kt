@@ -1,6 +1,8 @@
 package ru.skillbranch.devintensive.utils
 
 import android.support.v7.widget.LinearLayoutCompat
+import ru.skillbranch.devintensive.extensions.SECOND
+import ru.skillbranch.devintensive.extensions.TimeUnits
 
 object Utils {
     fun parseFullName(fullName: String?): Pair<String?, String?> {
@@ -54,4 +56,13 @@ object Utils {
         }
         return newName
     }
+//    fun declination(date: Long, type: TimeUnits): String {
+//        return when(TimeUnits) {
+//            SECOND -> return when(date) {
+//                1L -> "1 минута"
+//                0L, 5L, 10L, 15L, 20L, 25L, 30L, 35L -> "0 минут"
+//
+//            }
+//        }
+//    }
 }
